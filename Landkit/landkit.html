@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landkit.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .dashkit img {
+            transform: translateY(-20px) rotateY(-35deg) rotateX(15deg);
+            box-shadow: 25px 60px 125px -25px rgba(80, 102, 144, .1), 16px 40px 75px -40px rgba(0, 0, 0, .2);
+            ;
+        }
+
+        .dashkit {
+
+            perspective-origin: 0;
+            perspective: 1500px;
+        }
+
+        /* .carousel-caption {
+            bottom: 25%;
+        } */
+
+        .bg-grey-200 {
+            background-color: #f1f4f1;
+        }
+        .bg-darkblue{
+            background-color: #1b2a4e;
+            color: white;
+        }
+        .downlaodsample{
+            transition: 0.4s;
+        }
+        .downlaodsample:hover{
+            
+            transform: translateY(-15px);
+            box-shadow: 0 1.8rem 4rem rgba(22,28,45,.05);
+        }
+        .curve{
+            /* clip-path: polygon(52% 10%, 100% 0, 100% 49%, 100% 100%, 53% 100%, 0 100%, 0 49%, 0 10%); */
+            padding-top: 4rem;
+        }
+        .insta, .airbnb{
+            height: 427px;
+            object-fit: cover;
+        }
+        .instalogo{
+            max-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg pb-5">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-2" href="#">Landkit.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav list-unstyled fs-5 mx-auto">
+                    <li class="nav-item p-3"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item p-3"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item p-3"><a class="nav-link" href="#">Account</a></li>
+                    <li class="nav-item p-3"><a class="nav-link" href="#">Documentation</a></li>
+                </ul>
+                 <div class="ps-3 ps-md-0">
+                    <button class="btn btn-primary px-3 py-2">Buy now</button>
+                 </div>
+            </div>
+               
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-between py-5">
+            <div class="col-md-6 order-md-2 mb-3">
+                <img src="illustration-2.png" alt="img" class="img-fluid">
+            </div>
+            <div class="col-md-5 order-md-1 text-md-start text-center">
+                <h2 class="display-5">Welcome to <span class="text-primary">Landkit</span>.<br>
+                    Develop anything.</h2>
+                <p class="lead mt-4 mb-5">Build a beautiful, modern website with flexible Bootstrap components built
+                    from scratch.</p>
+                <div>
+                    <button class="btn btn-primary me-2 mb-md-0 mb-2 py-3 px-4">View all pages<i
+                            class="bi bi-arrow-right ps-3"></i></button>
+                    <button class="btn btn-outline-secondary py-3 px-4">Documentation</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row py-5 justify-content-around">
+            <div class="col-md-4">
+                <i class="bi bi-toggles fs-1 text-primary ps-1"></i>
+                <p class="h4 fw-medium pt-2">Built for developers</p>
+                <p class="text-secondary">Landkit is built to make your life easier. Variables, build tooling,
+                    documentation, and reusable components.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-columns-gap fs-1 text-primary ps-1"></i>
+                <p class="h4 fw-medium pt-2">Designed to be modern</p>
+                <p class="text-secondary">Designed with the latest design trends in mind. Landkit feels modern, minimal,
+                    and beautiful.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-code-slash fs-1 text-primary ps-1"></i>
+                <p class="h4 fw-medium pt-2">Documentation for everything</p>
+                <p class="text-secondary">We've written extensive documentation for components and tools, so you never
+                    have to reverse engineer anything.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="text-secondary">
+    <div class="container">
+        <div class="row align-items-center py-5 ">
+            <div class="col-md-2 col-6">
+                <img src="https://www.myvrhost.com/wp-content/uploads/2015/12/Airbnb-new-logo-2014-1.png" alt="airbnb"
+                    class="img-fluid w-75">
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="6303a56bab1b900654aad3c4 (5).png" alt="coinbase" class="img-fluid w-75">
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="https://www.myvrhost.com/wp-content/uploads/2015/12/Airbnb-new-logo-2014-1.png" alt="dribble"
+                    class="img-fluid w-75">
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="6303a56bab1b900654aad3c4 (5).png" alt="airbnb" class="img-fluid w-75">
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="https://www.myvrhost.com/wp-content/uploads/2015/12/Airbnb-new-logo-2014-1.png" alt="airbnb"
+                    class="img-fluid w-75">
+            </div>
+            <div class="col-md-2 col-6">
+                <img src="6303a56bab1b900654aad3c4 (5).png" alt="airbnb" class="img-fluid w-75">
+            </div>
+        </div>
+    </div>
+    <hr class="text-secondary mb-0">
+    <div class="bg-body-tertiary">
+        <div class="container py-4">
+            <div class="row py-5 align-items-center justify-content-around">
+                <div class="col-md-5 order-md-2">
+                    <h3 class="fs-2 fw-normal"> The most useful resource <br>
+                        <span class="text-success">ever created for developers.</span>
+                    </h3>
+                    <p class="fs-5 text-secondary fw-light pt-2">Using Landkit to build your site means never worrying
+                        about designing another page or cross browser compatibility. Our ever-growing library of
+                        components and pre-designed layouts will make your life easier.</p>
+                    <div class="row pt-3">
+                        <div class="col-md-6 fs-5">
+                            <p><i class="bi bi-check-circle-fill text-success pe-3"></i>Lifetime updates</p>
+                            <p><i class="bi bi-check-circle-fill text-success pe-3"></i>Tons of assets</p>
+                        </div>
+                        <div class="col-md-6 fs-5">
+                            <p><i class="bi bi-check-circle-fill text-success pe-3"></i>Lifetime updates</p>
+                            <p><i class="bi bi-check-circle-fill text-success pe-3"></i>Tons of assets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 order-md-1 mt-3">
+                    <div class="card border-0 downlaodsample">
+                        <img class="img-fluid card-img-top" src="photo-2.jpg" alt="photo">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control border-0  border-bottom shadow-none"
+                                        id="floatingInput" placeholder="name">
+                                    <label for="floatingInput" class="text-secondary">Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control border-0 border-bottom shadow-none"
+                                        id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput" class="text-secondary">Email</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <input type="password" class="form-control border-0 border-bottom shadow-none"
+                                        id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput" class="text-secondary">Password</label>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success opacity-75 w-100 p-3">Download a sample</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container py-5">
+                <div class="row justify-content-around py-4">
+                    <div class="col-md-6">
+                        <h2 class="fw-normal">We have lots of experience <br>
+                            <span class="text-primary">building Bootstrap themes.</span>
+                        </h2>
+                        <p class="fs-5 text-secondary fw-light pt-2">We've built well over a dozen Bootstrap themes and
+                            sold tens of thousands of copies.</p>
+                        <div class="row pt-3">
+                            <div class="col-2 fs-5">
+                                <i class="bi bi-repeat text-primary fs-1"></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="h4 fw-normal">Bootstrap users since the beginning</p>
+                                <p class="text-secondary fw-light fs-5">We've been developing with Bootstrap since it
+                                    was
+                                    publicly released in 2011.</p>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-2 fs-5">
+                                <i class="bi bi-code-slash text-primary fs-1 "></i>
+                            </div>
+                            <div class="col-9">
+                                <p class="h4 fw-normal">Deep understanding of Bootstrap</p>
+                                <p class="text-secondary fw-light fs-5">We've watched Bootstrap grow up over the years
+                                    and understand it better than almost anyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 dashkit mt-5">
+                        <img class="img-fluid rounded-3" src="dashkit.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center">
+                    <p class="fs-2">Our customers are our biggest fans.</p>
+                    <p class="text-secondary fs-5">We don't like to brag, but we don't mind letting our customers do it
+                        for us. Here are a few nice things folks have said about our themes over the years.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center py-5">
+                <div class="col-md-8">
+                    <div class="carousel slide shadow" id="carouselExampleCaptions">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.yourstory.com/cs/wordpress/2016/05/AirbnbOpen_SF_GabrielaHerman_21nov2014__GNH2612.jpg?fm=png&auto=format&blur=500"
+                                    alt="img" class=" img-fluid d-block w-100 airbnb">
+                                <div class="carousel-caption bottom-0">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                                        class="img-fluid w-50 pb-3" alt="airbnb">
+                                    <p class="text-light fs-5">"Landkit is hands down the most useful front end Bootstrap
+                                        theme I've ever used. I can't wait to use it again for my next project."</p>
+                                    <p class="text-light pt-3">DAVE GAMACHE</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.wired.com/photos/5dcc8b14f3485600081260d8/master/w_2560%2Cc_limit/Cul-insta-989696170.jpg"
+                                    alt="img" class=" img-fluid d-block w-100 insta">
+                                <div class="carousel-caption bottom-0">
+                                    <img src="Instagram-Wordmark-White-Logo.wine.svg"
+                                        class="img-fluid w-50 instalogo" alt="instagram">
+                                    <p class="text-light fs-5">"I've never used a theme as verstile and flexible as
+                                        Landkit. It's my go to for building landing sites on almost any project."</p>
+                                    <p class="text-light pt-3">RUSS D'SA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-bg-secondary" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon text-bg-secondary" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="bg-grey-200  curve">
+        <div class="container py-5">
+            <div class="row align-items-center justify-content-between py-4">
+                <div class="col-md-5 order-md-2 mb-5 mb-md-0">
+                    <img src="illustration-8.png" class="img-fluid" alt="img">
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <h2 class="fw-normal">Stay focused on your business. <br>
+                        <span class="text-primary">Let us handle the design.</span>
+                    </h2>
+                    <p class="fs-5 text-secondary fw-light pt-2">You have a business to run. Stop worring about
+                        cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for
+                        you.
+                    </p>
+                    <div class="row pt-3">
+                        <div class="col">
+                            <h4 class="mb-1">100%</h4>
+                            <p>Satisfaction</p>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-1">24/7</h4>
+                            <p>Support</p>
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-1">100k+</h4>
+                            <p>Sales</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row justify-content-center py-4">
+                <div class="col-md-7 text-center">
+                    <h2 class="fw-normal fs-1">Fair, simple pricing for all. </h2>
+                    <p class="fs-4 text-secondary fw-light pt-2">All types of businesses need access to development
+                        resources, so we give you the option to decide how much you need to use.</p>
+                    <form class="d-flex align-items-center justify-content-center mb-5">
+                        <span class="text-muted">Annual</span>
+                        <div class="form-check form-switch ms-5 me-2">
+                            <input class="form-check-input fs-4 shadow-none border-2" type="checkbox" role="switch"
+                            data-bs-toggle="">
+                        </div>
+                        <span class="text-muted">Monthly</span>
+                    </form>
+
+                </div>
+            </div>
+            <div class="row align-items-center gx-0 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-lg z-1 mb-4 mb-md-0">
+                        <div class="card-body py-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="text-center mb-4">
+                                        <span class="badge rounded-pill bg-primary">
+                                            <span class="h6 text-uppercase">Standard</span>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="h2 mb-0 align-self-start mt-3">$</span>
+                                        <span class="display-3 mb-0">29</span>
+                                        <span class="h2 align-self-end mb-1 fw-normal">/mo</span>
+                                    </div>
+                                    <p class="text-center text-muted mb-5">per seat</p>
+
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-check-circle-fill text-primary pe-3"></i></div>
+                                        <p>Rich, responsive landing pages</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-check-circle-fill text-primary pe-3"></i></div>
+                                        <p>100+ styled components</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-check-circle-fill text-primary pe-3"></i></div>
+                                        <p>Flexible, simple license</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-check-circle-fill text-primary pe-3"></i></div>
+                                        <p>Speedy build tooling</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-check-circle-fill text-primary pe-3"></i></div>
+                                        <p>6 months free support included</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="card-footer border-0 bg-primary">
+                            <a href="#" class="btn text-light fs-5 w-100">Get it now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body py-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10">
+                                    <div class="text-center mb-5">
+                                        <span class="badge rounded-pill bg-primary">
+                                            <span class="h6 text-uppercase">enterprise</span>
+                                        </span>
+                                     </div>
+                                     <p class="fs-5 text-secondary mb-5">We offer variable pricing with discounts for larger organizations.
+                                        Get in touch with us and we’ll figure out something that works for
+                                        everyone.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0 bg-secondary">
+                            <a href="#" class="btn text-light fs-5 w-100">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-darkblue">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex">
+                    <div class="pt-1 pe-4">
+                        <i class="bi bi-question-circle-fill text-success fs-4"></i>
+                    </div>
+                    <div>
+                        <p class="fs-5 mb-2">Can I use Landkit for my clients?</p>
+                        <p class="opacity-75">Absolutely. The Bootstrap Themes license allows you to build a website for personal use or for a client. </p>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex">
+                    <div class="pt-1 pe-4">
+                        <i class="bi bi-question-circle-fill text-success fs-4"></i>
+                    </div>
+                    <div>
+                        <p class="fs-5 mb-2">Is there a money back guarantee?</p>
+                        <p class="opacity-75">Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex">
+                    <div class="pt-1 pe-4">
+                        <i class="bi bi-question-circle-fill text-success fs-4"></i>
+                    </div>
+                    <div>
+                        <p class="fs-5 mb-2">Do I get free updates?</p>
+                        <p class="opacity-75">Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex">
+                    <div class="pt-1 pe-4">
+                        <i class="bi bi-question-circle-fill text-success fs-4"></i>
+                    </div>
+                    <div>
+                        <p class="fs-5 mb-2">Does it work with Rails? React? Laravel?</p>
+                        <p class="opacity-75">AYes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="text-center mb-3 ">
+                        <span class="badge rounded-pill bg-secondary opacity-50">
+                            <span class="fs-6 text-uppercase fw-light">Get started</span>
+                        </span>
+                    </div>
+                    <p class="display-6 text-center">Get Landkit and save your time.</p>
+                    <p class="opacity-75 text-center fs-5 lead mb-5">Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.</p>
+                    <div class="d-flex justify-content-center ">
+                        <button class="btn btn-success py-3 px-4 fw-bold">Buy it now<i
+                            class="bi bi-arrow-right ps-1"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-grey-200">
+        <div class="container">
+            <div class="row py-5 justify-content-center">
+                <div class="col-md-3 col-1 mb-4 mb-md-0">
+                    <a class="text-decoration-none fw-bold text-primary fs-4" href="#">Landkit.</a>
+                    <p class="mb-3">A better way to build</p>
+                    <div class="d-flex gap-3 text-secondary">
+                        <i class="bi bi-instagram fs-5"></i>
+                        <i class="bi bi-facebook fs-5"></i>
+                        <i class="bi bi-twitter fs-5"></i>
+                        <i class="bi bi-pinterest fs-5"></i>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-3 mb-md-0">
+                    <p>PRODUCTS</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Page Builder</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">UI Kit</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Styleguide</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-3 mb-md-0">
+                    <p>SERVICES</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Changelog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Pagebuilder</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">UI Kit</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <p>CONNECT</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Page Builder</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">UI Kit</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Styleguide</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Changelog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <p>LEGAL</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Documentation</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">Changelog</a></li>
+                        <li class="mb-2 "><a href="#" class="text-decoration-none text-secondary">Pagebuilder</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
